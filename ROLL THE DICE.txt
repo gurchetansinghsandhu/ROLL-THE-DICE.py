@@ -1,0 +1,17 @@
+# ROLL THE DICE 
+
+import random                                             # USING RANDOM MODULE TO GENERATE RANDOMNESS IN THE CODE
+
+while True:                                               #USING WHILE LOOP TO REPEATEDLY EXECUTE A BLOCK OF CODE
+    choice  = input("roll the dice (y/n) : ").lower()
+    if choice == "y":                                     #USING IF ELIF ELSE STATEMENT FOR SAID PURPOSE          
+        die1 = random.randint(1, 6)
+        die2 = random.randint(1, 6)
+        print(f"numbers are({die1}, {die2}) ")
+
+    elif choice == "n":
+        print("thanks for playing!")
+        break                                              #USING BREAK STATEMENT TO TERMINATE THE CODE
+
+    else:
+        print("invalid input")
